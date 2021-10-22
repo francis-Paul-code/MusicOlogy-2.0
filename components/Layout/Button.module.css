@@ -1,0 +1,38 @@
+
+.button {
+    justify-content: space-around;
+    font-family: Ubuntu Bold;
+    font-size: 2.6vh;
+    letter-spacing: 0.05rem;
+    height: 5.8vh;
+    margin-bottom: 0.3vh;
+    cursor: pointer;
+    border-radius: 1vh;
+  }
+  .button:active{
+    background:#B93F2F
+  }
+  .button:hover {
+    background: #081429;
+    /* 081429   061022 */
+  }
+  .startIcon {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    align-content: center;
+    min-width: 10%;
+    height: 100%;
+  }
+  .Holder{
+      position: relative;
+      padding:1.5vh;
+      display:flex;   
+      justify-content: space-around;
+  }
+ .Holder a{
+   position: relative;
+   box-sizing: border-box;
+   float:right;
+   width: 80%;
+ } 

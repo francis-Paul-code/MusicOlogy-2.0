@@ -14,3 +14,21 @@ a {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: local("Ubutnu-B"), url("../Assets/Fonts/Ubuntu-B.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Ubuntu Light";
+  src: local("Ubutnu-L"),
+    url("../Assets/Fonts/Ubuntu-L.ttf")
+      format("truetype");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubutnu-R"),
+   url("../Assets/Fonts/Ubuntu-R.ttf") format("truetype");
+  font-weight:normal;
+  }

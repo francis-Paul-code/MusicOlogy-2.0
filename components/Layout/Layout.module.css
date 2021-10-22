@@ -1,0 +1,31 @@
+.Layout{
+    
+    width:100%;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    color:white;
+    overflow:hidden;
+    background:#060F1E;
+    display:flex;
+    justify-content: space-around;
+
+}
+.sideBar{
+    position:relative;
+    box-sizing: border-box;
+    float:left;
+    height:98vh;
+    top:1vh;
+    width:21%;
+}
+.main{
+    position:relative;
+    box-sizing: border-box;
+    float:right;
+    height:94vh;
+    top:3vh;
+    width:73%;
+    background:#06142B;
+    border-radius:2.5vh;
+}
