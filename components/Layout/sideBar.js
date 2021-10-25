@@ -1,4 +1,5 @@
 import classes from "./sideBar.module.css";
+import Link from "next/link";
 import Button from "./Button";
 import HomeIcon from "../icons/Home";
 import AlbumIcon from "../icons/Albums";
@@ -18,7 +19,7 @@ const SideBar = () => {
   }
   return (
     <section className={classes.main}>
-      <div className={classes.Logo}></div>
+      <Link href="/"><div className={classes.Logo}></div></Link>
 
       <section className={classes.Links}>
         <ul className={classes.ul}>

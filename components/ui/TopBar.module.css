@@ -1,19 +1,42 @@
 .main{
     width: 100%;
     height:8vh;
-    justify-content: space-around;
+    justify-content:right;
+    display:flex;
+    text-align: center;
+}
+.main div{
+    position: relative;
+    align-content: end;
+    width:90%;
+    height:100%;
 }
 .main input{
     position:relative;
-    width:30%;
-    right:10%;
-    float:right;
-    height:1.8vw;
-    margin-top:2.6vh;
+    width:80%;
+    height:1.8vh;
     padding:2vh;
     color: white;
     background-color:#2D3441;
     font-size: 2.2vh;
     border:none;
     border-radius:1.6vh;
+}
+
+.Button {
+    position:relative;
+    background: transparent;
+    border: none;
+    width:10%;
+    height:100%;
+    cursor: pointer;
+    text-align: center;
+    padding:0;
+}
+.main form{
+    position:relative;
+    width:85%;
+    float:right;
+    top:26%;
+    display:flex;
 }
