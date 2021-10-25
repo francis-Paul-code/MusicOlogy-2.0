@@ -14,9 +14,11 @@ import SettingsIcon from "../icons/settings";
 import SubscribeIcon from "../icons/subscribe";
 
 const SideBar = () => {
-  function active(event){
-    event.target.classList.add("classes.active");
+  function active(name){
+    const data = querySelectorAll('ul');
+    console.log(data);
   }
+
   return (
     <section className={classes.main}>
       <Link href="/"><div className={classes.Logo}></div></Link>

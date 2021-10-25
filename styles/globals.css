@@ -32,3 +32,25 @@ a {
    url("../Assets/Fonts/Ubuntu-R.ttf") format("truetype");
   font-weight:normal;
   }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:rgba(255, 255, 255, 0.014);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color:rgb(185, 63, 47) ;
+  border-radius:1vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:rgb(187, 56, 39);
+}

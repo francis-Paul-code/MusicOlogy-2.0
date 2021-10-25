@@ -1,18 +1,43 @@
 import classes from "./TopBar.module.css";
 import { IconButton } from "@material-ui/core";
+import { useRef } from "react";
+import { useRouter } from "next/router";
+import SearchIcon from "../icons/SearchIcon";
+import SubmitIcon from "../icons/submit";
+export var name;
 
-const TopBar = () => {
+const TopBar = (props) => {
+  const searchText = useRef(props.searchText);
+  const router = useRouter();
+  function searchSubmit(event) {
+    event.preventDefault();
+    const enteredtext = searchText.current.value;
+    const search_Data = enteredtext;
+    router.push("/Search:" + enteredtext);
+    name = search_Data;
+  }
+
   return (
     <section className={classes.main}>
-      <div>
-        <form>
-          <input type="text" id="searchBar" required/>
-          <br/>
-          <button type="Submit" className={classes.Button}>
-            <svg width="4vh" height="4vh" viewBox="0 0 30 30" fill="white">
-              <path d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-            </svg>
-          </button>
+      <div className={classes.container}>
+        <form onSubmit={searchSubmit}>
+          <div className={classes.searchBar}>
+            <div>
+              <SearchIcon />
+            </div>
+            <input
+              type="text"
+              id="searchBar"
+              required
+              placeholder="Songs,Artists,Albums"
+              ref={searchText}
+            />
+            <button type="Submit" className={classes.Button}>
+              <SubmitIcon />
+            </button>
+          </div>
+
+          <br />
         </form>
       </div>
     </section>

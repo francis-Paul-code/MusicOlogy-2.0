@@ -1,10 +1,13 @@
 import TopBar from '../../components/ui/TopBar';
+import Carrier from '../../components/ui/mainCarrier';
 
 const AlbumsPage = () => {
     return (
         <div>
             <TopBar/>
-            <h2>Albums Page</h2>
+            <Carrier>
+                <h1>Albums</h1>
+            </Carrier>
         </div>
     )
 }

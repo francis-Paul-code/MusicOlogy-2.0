@@ -1,42 +1,71 @@
-.main{
-    width: 100%;
-    height:8vh;
-    justify-content:right;
-    display:flex;
-    text-align: center;
+.main {
+  width: 100%;
+  height: 8vh;
+  justify-content: right;
+  display: flex;
+  text-align: center;
 }
-.main div{
-    position: relative;
-    align-content: end;
-    width:90%;
-    height:100%;
+.container {
+  position: relative;
+  align-content: end;
+  width: 95%;
+  height: 100%;
 }
-.main input{
-    position:relative;
-    width:80%;
-    height:1.8vh;
-    padding:2vh;
-    color: white;
-    background-color:#2D3441;
-    font-size: 2.2vh;
-    border:none;
-    border-radius:1.6vh;
+.main form {
+  position: relative;
+  width: 100%;
+  height: 55%;
+  float: right;
+  top: 26%;
+  right: 3%;
+  display: flex;
 }
 
-.Button {
-    position:relative;
-    background: transparent;
-    border: none;
-    width:10%;
-    height:100%;
-    cursor: pointer;
-    text-align: center;
-    padding:0;
+.searchBar {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  background-color: #2d3441;
+  border-radius: 1.2vh;
 }
-.main form{
-    position:relative;
-    width:85%;
-    float:right;
-    top:26%;
-    display:flex;
+.searchBar div {
+  position: relative;
+  box-sizing: border-box;
+  width: 6%;
+}
+.searchBar svg {
+  position: relative;
+  top: 15%;
+}
+.searchBar input {
+  position: relative;
+  width: 87%;
+  height: 100%;
+  padding: 0.8vh;
+  color: white;
+  background-color: transparent;
+  font-size: 2.2vh;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  border: none;
+}
+.Button {
+  position: relative;
+  background: transparent;
+  border: none;
+  align-items: center;
+  width: 8%;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+}
+.Button svg {
+  position: relative;
+  top:1px;
+}
+.Button svg:hover {
+  fill: rgb(185, 63, 47);
 }
