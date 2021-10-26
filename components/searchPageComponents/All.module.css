@@ -6,8 +6,9 @@
 .tracks{
     position: relative;
     width: 60%;
-    height:auto;
+    max-height:50vh;
     box-sizing: border-box;
+    overflow: hidden;
     float: left;
 }
 .artists{
