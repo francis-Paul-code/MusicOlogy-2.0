@@ -1,0 +1,85 @@
+.main{
+    position: relative;
+    width: 100%;
+    height:9vh;
+    display: flex;
+    justify-content: space-around;
+    background: transparent;
+    border-bottom: 1px solid #504E4E;
+}
+
+.cover{
+    position: relative;
+    height: 100%;
+    width:5%;
+    padding:0.6vh 0;
+
+}
+.cover img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius:0.5vh;
+}
+.title{
+    position: relative;
+    height: 100%;
+    width:23%;
+    color: #fff;
+}
+.title h3{
+    position: relative;
+    font-size:100%;
+    margin:0;
+    padding:3vh 0;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
+
+}
+.artists{
+    position: relative;
+    height: 100%;
+    width:20%;
+    color: #fff;
+}
+.artists h3{
+    position: relative;
+    font-size:100%;
+    margin:0;
+    padding:3vh 0;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
+    text-align: center;
+}
+
+.album{
+    position: relative;
+    height: 100%;
+    width:20%;
+    color: #fff;
+}
+.album h3{
+    position: relative;
+    font-size:100%;
+    margin:0;
+    padding:3vh 0;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
+    text-align:center;
+}
+
+.length{
+    position: relative;
+    height: 100%;
+    width:20%;
+    color: #fff;
+}
+.length h3{
+    position: relative;
+    font-size:100%;
+    margin:0;
+    padding:3vh 0;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
+    text-align:center;
+}

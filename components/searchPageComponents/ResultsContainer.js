@@ -2,31 +2,11 @@ import { Grid, Tabs, Tab, AppBar, makeStyles } from "@material-ui/core";
 import { Fragment, useState } from "react";
 import classes from "./ResultsContainer.module.css";
 
-const useStyle = makeStyles(() =>({
-    tabs: {
-      "& .MuiButtonBase-root.MuiTab-root": {
-        position:"relative",
-        minWidth:"8.2vw !important",
-        fontWeight:"bold",
-        fontSize:"  2.2vh"
-      },
-      "& .MuiTabsIndicator":{
-        color:"#B93F2F",
-        backgroundColor:"#B93F2F"
-      }
-    }
-}))
-
-
-
-
-
 const ResultsContainer = (props) => {
   const [value, setValue] = useState(0);
   const handler = (e, val) => {
     setValue(val);
   };
-  const _classes = useStyle();
 
 
   return (
@@ -40,7 +20,7 @@ const ResultsContainer = (props) => {
           fontWeight: "bold",
         }}
       >
-        <Tabs value={value} onChange={handler} className={_classes.tabs}>
+        <Tabs value={value} onChange={handler} >
           <Tab label="All" />
           <Tab label="Tracks" />
           <Tab label="Albums" />
@@ -50,6 +30,7 @@ const ResultsContainer = (props) => {
         </Tabs>
       </AppBar>
       <Grid className={classes.container}>
+        {}
         <TabPanel value={value} index={0}>
           {props.All}
         </TabPanel>
@@ -78,8 +59,8 @@ export default ResultsContainer;
 function TabPanel(props) {
   const { children, value, index } = props;
   return (
-    <div>
-      { value === index && (<h1>{children}</h1>) }
+    <div className={classes.holder}>
+      { value === index && (<Fragment>{children}</Fragment>) }
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.tracks{
+    position: relative;
+    width: 60%;
+    height:auto;
+    box-sizing: border-box;
+    float: left;
+}
+.artists{
+    position: relative;
+    width: 39%;
+    height:auto;
+    box-sizing: border-box;
+    float: right;
+}

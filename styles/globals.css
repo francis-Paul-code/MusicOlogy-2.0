@@ -36,7 +36,7 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0.8vh;
+  width: 0.5vh;
 }
 
 /* Track */
@@ -53,4 +53,14 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background:rgb(187, 56, 39);
+}
+.MuiButtonBase-root.MuiTab-root{
+  position:relative;
+  min-width:8.2vw !important;
+  font-weight:bold;
+  font-size:2.2vh;
+}
+.MuiTabsIndicator{
+  color:#B93F2F;
+  background-color:#B93F2F;
 }
