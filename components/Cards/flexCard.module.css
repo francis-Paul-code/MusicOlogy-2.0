@@ -6,7 +6,13 @@
     justify-content: space-around;
     background: transparent;
     border-bottom: 1px solid #504E4E;
+    overflow: hidden;
+    cursor: pointer;
 }
+.main:hover {
+    box-shadow: 0 0px 20px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+    background:#061835;
+  }
 
 .cover{
     position: relative;

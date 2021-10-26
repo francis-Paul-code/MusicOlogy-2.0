@@ -2,7 +2,7 @@ import FlexCard from "../Cards/flexCard"
 
 const TrackList = (props) => {
     return (
-       <ul>
+       <ul style={{padding:"0"}}>
          {props.item.map((item) => (
              <FlexCard
               id={item.id}
