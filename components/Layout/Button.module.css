@@ -9,12 +9,8 @@
     cursor: pointer;
     border-radius: 1vh;
   }
-  .button:active{
-    background:#B93F2F
-  }
   .button:hover {
     background: #081429;
-    /* 081429   061022 */
   }
   .startIcon {
     position: relative;

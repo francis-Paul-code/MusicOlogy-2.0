@@ -1,4 +1,5 @@
 import classes from "./sideBar.module.css";
+import Link from "next/link";
 import Button from "./Button";
 import HomeIcon from "../icons/Home";
 import AlbumIcon from "../icons/Albums";
@@ -13,12 +14,14 @@ import SettingsIcon from "../icons/settings";
 import SubscribeIcon from "../icons/subscribe";
 
 const SideBar = () => {
-  function active(event){
-    event.target.classList.add("classes.active");
+  function active(name){
+    const data = querySelectorAll('ul');
+    console.log(data);
   }
+
   return (
     <section className={classes.main}>
-      <div className={classes.Logo}></div>
+      <Link href="/"><div className={classes.Logo}></div></Link>
 
       <section className={classes.Links}>
         <ul className={classes.ul}>

@@ -1,6 +1,8 @@
 import Head from "next/head";
 import {Fragment} from "react";
 import TopBar from '../components/ui/TopBar'
+import Carrier from '../components/ui/mainCarrier';
+
 const Home = () => {
   return (
     <Fragment>
@@ -13,6 +15,9 @@ const Home = () => {
       </Head>
       <section>
         <TopBar/>
+        <Carrier>
+          <h1>Home</h1>
+        </Carrier>
       </section>
     </Fragment>
   );
