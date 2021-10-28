@@ -12,7 +12,9 @@ const AllResults = (props) => {
       <div className={classes.tracks}>
         <Fragment>
           <Link href="/mkl">
-            <h3 className={classes.head}> Tracks </h3>
+            <div className={classes.head}>
+              <h3> Tracks </h3>
+            </div>
           </Link>
           <TrackResults />
         </Fragment>
@@ -20,7 +22,9 @@ const AllResults = (props) => {
       <div className={classes.artists}>
         <Fragment>
           <Link href="/mkl">
-            <h3 className={classes.head}> Artists </h3>
+            <div className={classes.head}>
+              <h3> Artists </h3>
+            </div>
           </Link>
           <ArtistResults />
         </Fragment>
@@ -28,15 +32,19 @@ const AllResults = (props) => {
       <div className={classes.albums}>
         <Fragment>
           <Link href="/mkl">
-            <h3 className={classes.head}> Albums </h3>
+            <div className={classes.head}>
+              <h3> Albums </h3>
+            </div>
           </Link>
           <AlbumsResults />
         </Fragment>
       </div>
       <div className={classes.playlists}>
         <Fragment>
-        <Link href="/mkl">
-            <h3 className={classes.head}> Playlists </h3>
+          <Link href="/mkl">
+            <div className={classes.head}>
+              <h3> Playlists </h3>
+            </div>
           </Link>
           <PlaylistResults />
         </Fragment>
