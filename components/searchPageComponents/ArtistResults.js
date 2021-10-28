@@ -11,7 +11,7 @@ const ArtistResults = (props) => {
         let artist = {
           id: data[i].artist.id,
           name: data[i].artist.name,
-          picture: data[i].artist.picture,
+          picture: data[i].artist.picture_medium,
         };
         dataHolder.push(artist);
       }
@@ -30,7 +30,7 @@ const ArtistResults = (props) => {
         position: "relative",
         width: "100%",
         height: "auto",
-        padding: "2vh",
+        padding:" 0 3%",
         display: "inline-flex",
       }}
     >

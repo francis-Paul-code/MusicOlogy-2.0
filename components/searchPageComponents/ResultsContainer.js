@@ -25,7 +25,6 @@ const ResultsContainer = (props) => {
           <Tab label="Tracks" />
           <Tab label="Albums" />
           <Tab label="Artists" />
-          <Tab label="Genres" />
           <Tab label="Playlists" />
         </Tabs>
       </AppBar>
@@ -44,9 +43,6 @@ const ResultsContainer = (props) => {
           {props.Artits}
         </TabPanel>
         <TabPanel value={value} index={4}>
-          {props.Genres}
-        </TabPanel>
-        <TabPanel value={value} index={5}>
           {props.Playlist}
         </TabPanel>
       </Grid>

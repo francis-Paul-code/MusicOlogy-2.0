@@ -7,11 +7,11 @@ const PrimaryCard = (props) => {
     <Link href={"/"}>
       <div className={classes.main}>
         <div className={classes.image}>
-          <img src={props._image} alt="" />
+          <img src={props.image} alt="" />
         </div>
         <Grid className={classes._footer}>
-          <h2 className={classes._text}>{props._album}</h2>
-          <h2 className={classes._text2}>{props._artist}</h2>
+          <h2 className={classes._text}>{props.title}</h2>
+          <h2 className={classes._text2}>{props.artist} Tracks</h2>
         </Grid>
       </div>
     </Link>

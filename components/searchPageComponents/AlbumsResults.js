@@ -20,7 +20,6 @@ const AlbumsResults = (props) => {
           }
         }
       }
-      console.log(dataHolder);
       handler();
       const U_albums = [
         ...dataHolder
@@ -34,7 +33,8 @@ const AlbumsResults = (props) => {
         position: "relative",
         width: "100%",
         height: "auto",
-        padding: "2vh",
+        padding: "0 3%"
+
       }}
     >
       <AlbumsList item={U_albums} />

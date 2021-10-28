@@ -8,7 +8,6 @@ const ArtistsList = (props) => {
         display: "flex",
         flexWrap: "wrap",
         width: "100%",
-        alignContent: "center",
         justifyContent: "flex-start"
       }}
     >

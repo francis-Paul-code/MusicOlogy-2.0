@@ -1,7 +1,7 @@
 .main{
     position: relative;
     width: 100%;
-    height:7vh;
+    height:5vh;
     display: flex;
     justify-content: space-around;
     background: transparent;
@@ -27,7 +27,7 @@
     position: relative;
     font-size:100%;
     margin:0;
-    padding:2vh 0;
+    padding:1vh 0;
     font-weight: normal;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
 
@@ -42,7 +42,7 @@
     position: relative;
     font-size:100%;
     margin:0;
-    padding:2vh 0;
+    padding:1vh 0;
     font-weight: normal;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
 
@@ -57,7 +57,7 @@
     position: relative;
     font-size:100%;
     margin:0;
-    padding:2vh 0;
+    padding:1vh 0;
     font-weight: normal;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
 
@@ -72,7 +72,7 @@
     position: relative;
     font-size:100%;
     margin:0;
-    padding:2vh 0;
+    padding:1vh 0;
     font-weight: normal;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,;
 
