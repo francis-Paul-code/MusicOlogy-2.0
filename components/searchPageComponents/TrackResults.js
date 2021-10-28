@@ -2,8 +2,8 @@ import { Fragment } from 'react';
 import TrackList from './TrackList';
 import classes from './TrackResults.module.css';
 import { data } from "./data";
-import {dataHolder} from "./AllResults";
 
+const dataHolder = [];
 
 const TrackResults = () => {
 
@@ -14,8 +14,6 @@ const TrackResults = () => {
     
             var seconds = data[i].duration; // Some arbitrary value
             var date = new Date(1000 * seconds).toISOString().substr(11, 8).replace(/^[0:]+/, "") // multiply by 1000 because Date() requires miliseconds
-             console.log(date)
-    
             let track = {
               id: data[i].id,
               title: data[i].title_short,

@@ -5,6 +5,8 @@ import PrimaryCard from "../../components/Cards/primaryCard";
 import AlbumCard from "../../components/Cards/AlbumCard";
 import AllResults from "../../components/searchPageComponents/AllResults";
 import TrackResults from "../../components/searchPageComponents/TrackResults";
+import ArtistResults from "../../components/searchPageComponents/ArtistResults";
+import AlbumsResults from "../../components/searchPageComponents/AlbumsResults";
 
 const SearchPage = (props) => {
   const data = "This is dummy text!!!";
@@ -16,8 +18,8 @@ const SearchPage = (props) => {
         <ResultsContainer
           All={<AllResults />}
           Tracks={<TrackResults/>}
-          Albums={data}
-          Artits={data}
+          Albums={<AlbumsResults/>}
+          Artits={<ArtistResults/>}
           Genres={data}
           Playlist={data}
         />

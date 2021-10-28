@@ -14,7 +14,16 @@
 .artists{
     position: relative;
     width: 39%;
-    height:auto;
+    max-height:50vh;
     box-sizing: border-box;
     float: right;
+    overflow: hidden;
+}
+.albums{
+    position: relative;
+    width: 100%;
+    max-height:50vh;
+    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
 }

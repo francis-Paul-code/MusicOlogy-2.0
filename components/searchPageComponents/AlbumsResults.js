@@ -1,0 +1,45 @@
+import AlbumsList from "./AlbumsList";
+import {data} from './data';
+
+const dataHolder = [];
+
+const AlbumsResults = (props) => {
+
+    function handler() {
+        for (let i = 0; i < data.length; i++) {
+          const values = data[i].album.type;
+          if (values === "album") {
+            let album = {
+              id: data[i].album.id,
+              title: data[i].album.title,
+              picture: data[i].album.cover,
+              name: data[i].artist.name,
+              
+            };
+            dataHolder.push(album);
+          }
+        }
+      }
+      console.log(dataHolder);
+      handler();
+      const U_albums = [
+        ...dataHolder
+          .reduce((map, obj) => map.set(obj.id, obj), new Map())
+          .values(),
+      ];
+
+    return (
+        <div
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "auto",
+        padding: "2vh",
+      }}
+    >
+      <AlbumsList item={U_albums} />
+    </div>
+    )
+}
+
+export default AlbumsResults

@@ -6,10 +6,10 @@ const ArtistCard = (props) => {
     <Link href={"/"}>
       <div className={classes.main}>
         <div className={classes.image}>
-          <img src={props._image} alt="" />
+          <img src={props.image} alt="" />
         </div>
         <div className={classes.artist}>
-          <h3>{props._artist}</h3>
+          <h3>{props.artist}</h3>
         </div>
       </div>
     </Link>
