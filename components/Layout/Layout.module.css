@@ -57,11 +57,11 @@
         position:relative;
         width:94%;
         right:3%;
-        height:80%;
+        height:90vh;
     }
     .sideBar{
         position:relative;
-        height:90%;
+        height:92vh;
         left:0;
     }
     .logo{
