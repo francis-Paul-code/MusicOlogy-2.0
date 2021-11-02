@@ -1,5 +1,4 @@
 .Layout{
-    
     width:100%;
     min-height:100vh;
     margin:0;
@@ -7,25 +6,73 @@
     color:white;
     overflow:hidden;
     background:#060F1E;
-    display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
-.sideBar{
+.topBar{
     position:relative;
-    box-sizing: border-box;
-    float:left;
-    height:98vh;
-    top:1vh;
-    width:21%;
+    height:10%;
+    width:100%;
+    background:#060F1E;
+    float:top;
+    z-index:20000;
+}
+.menuIcon{
+    color:#fff;
 }
 .main{
     position:relative;
     box-sizing: border-box;
     float:right;
-    height:95vh;
-    top:3vh;
-    width:73%;
-    background:#06142B;
+    height:90vh;
+    right:2%;
+    top:1vh;
+    width:72%;
     border-radius:2.5vh;
+    background:#06142B;
+}
+.drawerPaper{
+    position:relative;
+    box-sizing: border-box;
+    float:left;
+    height:92vh;
+    width:350px;
+}
+.sideBar{
+    position:relative;
+    box-sizing: border-box;
+    float:left;
+    height:92vh;
+    width:22%;
+    border-right: none;
+    white-space: nowrap;
+}
+.logo{
+    width:4%;
+    margin: 0 5px;
+}
+
+@media (max-width: 960px) {
+    .main{
+        position:relative;
+        width:94%;
+        right:3%;
+        height:80%;
+    }
+    .sideBar{
+        position:relative;
+        height:90%;
+        left:0;
+    }
+    .logo{
+        width:10%;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 450px){
+    .drawerPaper{
+        
+        width:250px;
+    }
 }

@@ -2,8 +2,10 @@ import classes from "./TopBar.module.css";
 import { IconButton } from "@material-ui/core";
 import { useRef } from "react";
 import { useRouter } from "next/router";
-import SearchIcon from "../icons/SearchIcon";
-import SubmitIcon from "../icons/submit";
+import SearchIcon from "@material-ui/icons/SearchRounded";
+import ArrowRight from '@material-ui/icons/ArrowForward'
+import theme from "../Layout/theme"
+
 export var name;
 
 const TopBar = (props) => {
@@ -23,7 +25,7 @@ const TopBar = (props) => {
         <form onSubmit={searchSubmit}>
           <div className={classes.searchBar}>
             <div>
-              <SearchIcon />
+              <SearchIcon style={{color:theme.palette.secondary.main}}/>
             </div>
             <input
               type="text"
@@ -33,7 +35,7 @@ const TopBar = (props) => {
               ref={searchText}
             />
             <button type="Submit" className={classes.Button}>
-              <SubmitIcon />
+              <ArrowRight style={{color:"white"}}/>
             </button>
           </div>
 

@@ -1,9 +1,9 @@
 import Head from "next/head";
 import {Fragment} from "react";
-import TopBar from '../components/ui/TopBar'
+import TopBar from '../components/ui/TopBar';
 import Carrier from '../components/ui/mainCarrier';
 
-const Home = () => {
+const Landing = () => {
   return (
     <Fragment>
       <Head>
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Landing;
