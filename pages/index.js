@@ -6,7 +6,7 @@ import Carrier from "../components/ui/mainCarrier";
 const Landing = () => {
   return (
     <Fragment>
-      <Head>
+      {/* <Head>
         <title>MusicOlogy</title>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta
@@ -17,7 +17,7 @@ const Landing = () => {
           name="description"
           content="This Is the First Nextjs Version"
         ></meta>
-      </Head>
+      </Head> */}
       <section>
         <TopBar />
         <Carrier>

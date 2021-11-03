@@ -12,6 +12,7 @@
 .topBar{
     position:relative;
     height:8vh;
+    padding:0.5vh;
     width:100%;
     background:#060F1E;
     float:top;
@@ -24,9 +25,9 @@
     position:relative;
     box-sizing: border-box;
     float:right;
-    height:90vh;
+    height:88vh;
     right:2%;
-    top:1vh;
+    top:2vh;
     width:72%;
     border-radius:2.5vh;
     background:#06142B;
@@ -48,8 +49,9 @@
     white-space: nowrap;
 }
 .logo{
-    width:4%;
-    margin: 0 5px;
+    position: relative;
+    width:3.3%;
+    margin:0 0.3%;
 }
 
 @media (max-width: 960px) {
@@ -61,18 +63,21 @@
     }
     .sideBar{
         position:relative;
-        height:92vh;
+        height:92%;
         left:0;
     }
     .logo{
-        width:10%;
+        width:7%;
         margin: 0 5px;
     }
 }
 
 @media (max-width: 450px){
-    .drawerPaper{
-        
+    .drawerPaper{  
         width:250px;
+    }
+    .logo{
+        width:10%;
+        margin: 0 5px;
     }
 }

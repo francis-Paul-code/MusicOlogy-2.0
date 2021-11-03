@@ -12,48 +12,79 @@ import ArtistIcon from "../icons/Artists";
 import HelpIcon from "../icons/help";
 import SettingsIcon from "../icons/settings";
 import SubscribeIcon from "../icons/subscribe";
-import {Typography} from "@material-ui/core"
+import { Typography, Grid } from "@material-ui/core";
 import LibraryMusic from "@material-ui/icons/LibraryMusic";
-
-
 
 function Copyright() {
   return (
-    <Typography variant="body2" align="center" style={{ fontWeight: "bold" }} className={classes.copyright}>
+    <h3
+      variant="body2"
+      align="center"
+      style={{ fontWeight: "bold" }}
+      className={classes.copyright}
+    >
       <Link color="inherit" href="https://music-ology-2-0.vercel.app/">
-        &copy;Musicology {new Date().getFullYear()} 
-        | All Rights Reserved
+        &copy;Musicology {new Date().getFullYear()}| All Rights Reserved
       </Link>
-    </Typography>
+    </h3>
   );
 }
 
-
-
 const SideBar = () => {
-  function active(name){
-    const data = querySelectorAll('ul');
+  function active(name) {
+    const data = querySelectorAll("ul");
     console.log(data);
   }
 
   return (
     <section className={classes.main}>
       <section className={classes.Links}>
-        <ul className={classes.ul}>
-          <Button Route="/Home" _Name="Home" startIcon={<HomeIcon />} />
-          <Button Route="/Albums" _Name="Library" startIcon={<GenresIcon/>}  />
-          <Button Route="/" _Name="Playing Queue" startIcon={<PlayingQueue/>}  />
-        </ul>
+        <section style={{ position: "relative", width: "100%", height: "90%" }}>
 
-        <ul className={classes.Footer}>
-          <Button Route="/" _Name="Subscription" startIcon={<SubscribeIcon />}  />
-          <Button Route="/" _Name="Settings" startIcon={<SettingsIcon />}  />
-          <Button Route="/" _Name="Help" startIcon={<HelpIcon />} />
-        </ul>
+          <ul className={classes.ul}>
+            
+            <Button Route="/Home" _Name="Home" startIcon={<HomeIcon />} />
+            <Button
+              Route="/Albums"
+              _Name="Library"
+              startIcon={<GenresIcon />}
+            />
+            <Button
+              Route="/"
+              _Name="Playing Queue"
+              startIcon={<PlayingQueue />}
+            />
+          </ul>
 
-        <div className={classes.End}>
-          <Copyright style={{position: 'relative'}}/>
-        </div>
+          <ul className={classes.Footer}>
+            <Button
+              Route="/"
+              _Name="Subscription"
+              startIcon={<SubscribeIcon />}
+            />
+            <Button Route="/" _Name="Settings" startIcon={<SettingsIcon />} />
+            <Button Route="/" _Name="Help" startIcon={<HelpIcon />} />
+          </ul>
+
+        </section>
+
+        <Grid className={classes.End}>
+          <Typography
+            variant="body2"
+            align="center"
+            style={{ fontWeight: "bold" }}
+            className={classes.copyright}
+          >
+            <Link
+              color="inherit"
+              href="https://music-ology-2-0.vercel.app/"
+              className={classes.copyright}
+            >
+              &copy;Musicology {new Date().getFullYear()}| All Rights Reserved
+            </Link>
+          </Typography>
+        </Grid>
+
       </section>
     </section>
   );
