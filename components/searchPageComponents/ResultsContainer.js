@@ -20,7 +20,7 @@ const ResultsContainer = (props) => {
           fontWeight: "bold",
         }}
       >
-        <Tabs value={value} onChange={handler} >
+        <Tabs value={value} onChange={handler} variant="scrollable" scrollButtons="auto" >
           <Tab label="All" />
           <Tab label="Tracks" />
           <Tab label="Albums" />
