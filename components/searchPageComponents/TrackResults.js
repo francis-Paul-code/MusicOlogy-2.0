@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import TrackList from './TrackList';
 import classes from './TrackResults.module.css';
-import { data } from "./data";
+import {data} from '../../pages/api/search';
 
 const dataHolder = [];
 
@@ -17,7 +17,7 @@ const TrackResults = () => {
             let track = {
               id: data[i].id,
               title: data[i].title_short,
-              cover: data[i].album.cover,
+              cover: data[i].album.cover_big,
               artist: data[i].artist.name,
               album: data[i].album.title,
               duration: date,

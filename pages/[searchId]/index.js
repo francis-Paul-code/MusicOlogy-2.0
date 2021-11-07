@@ -6,9 +6,11 @@ import TrackResults from "../../components/searchPageComponents/TrackResults";
 import ArtistResults from "../../components/searchPageComponents/ArtistResults";
 import AlbumsResults from "../../components/searchPageComponents/AlbumsResults";
 import PlaylistResults from "../../components/searchPageComponents/PlaylistResults";
-
+import { searchResults, playlists } from "../api/search";
 
 const SearchPage = (props) => {
+  searchResults();
+  playlists()
   return (
     <div>
       <TopBar />

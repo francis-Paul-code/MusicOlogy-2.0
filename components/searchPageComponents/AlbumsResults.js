@@ -1,5 +1,5 @@
 import AlbumsList from "./AlbumsList";
-import {data} from './data';
+import {data} from '../../pages/api/search';
 
 const dataHolder = [];
 
@@ -12,7 +12,7 @@ const AlbumsResults = (props) => {
             let album = {
               id: data[i].album.id,
               title: data[i].album.title,
-              picture: data[i].album.cover,
+              picture: data[i].album.cover_big,
               name: data[i].artist.name,
               
             };

@@ -1,5 +1,5 @@
 import ArtistsList from "./ArtistsList";
-import { data } from "./data";
+import {data} from '../../pages/api/search';
 
 const dataHolder = [];
 
@@ -11,7 +11,7 @@ const ArtistResults = (props) => {
         let artist = {
           id: data[i].artist.id,
           name: data[i].artist.name,
-          picture: data[i].artist.picture_medium,
+          picture: data[i].artist.picture_big,
         };
         dataHolder.push(artist);
       }

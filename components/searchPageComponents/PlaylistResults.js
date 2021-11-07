@@ -1,5 +1,5 @@
 import Playlists from './Playlists'
-import{ data2 }from './data'
+import {data2} from '../../pages/api/search';
 
 const dataHolder =[];
 
@@ -13,7 +13,7 @@ const PlaylistResults = (props) => {
               id: data2[i].id,
               title: data2[i].title,
               name: data2[i].nb_tracks,
-              picture: data2[i].picture,
+              picture: data2[i].picture_big,
             };
             dataHolder.push(playlist);
           }

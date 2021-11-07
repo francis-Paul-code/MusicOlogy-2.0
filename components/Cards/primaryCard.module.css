@@ -1,7 +1,7 @@
 .main {
   position: relative;
-  height: 8%;
-  width: 20%;
+  height: 18vmax;
+  width: 22.5%;
   cursor: pointer;
   box-sizing: border-box;
   margin:2% 0 0 2%;

@@ -43,7 +43,7 @@ const SideBar = () => {
 
           <ul className={classes.ul}>
             
-            <Button Route="/Home" _Name="Home" startIcon={<HomeIcon />} />
+            <Button Route="/home" _Name="Home" startIcon={<HomeIcon />} />
             <Button
               Route="/Albums"
               _Name="Library"
