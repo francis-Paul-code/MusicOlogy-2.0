@@ -3,7 +3,7 @@ import classes from "./TrackList.module.css";
 
 const TrackList = (props) => {
   return (
-    <ul style={{ padding: "0" }}>
+    <ul style={{ padding: "0", margin:"0",}}>
       <div className={classes.main}>
         <div className={classes.cover}>
         </div>

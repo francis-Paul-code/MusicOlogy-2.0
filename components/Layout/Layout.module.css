@@ -31,6 +31,7 @@
     width:72%;
     border-radius:2.5vh;
     background:#06142B;
+    overflow:hidden;
 }
 .drawerPaper{
     position:relative;

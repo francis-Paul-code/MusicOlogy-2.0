@@ -5,6 +5,7 @@ const ArtistsList = (props) => {
       style={{
         position: "relative",
         padding: "0",
+        margin:"0",
         display: "flex",
         flexWrap: "wrap",
         width: "100%",
