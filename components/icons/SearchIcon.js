@@ -1,12 +1,12 @@
 import React from "react";
 
-const SearchIcon = () => {
+const SearchIcon = ({styles}) => {
   return (
     <svg
       width="3vh"
       height="3vh"
       position="relative"
-      fill="#B93F2F"
+      style={{fill:"#B93F2F",...styles}}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >

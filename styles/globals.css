@@ -5,6 +5,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+.MuiDrawer-paperAnchorDockedLeft{
+  border-right:none !important;
+}
 @media (max-width:960px) {
   body{
     width: 100%;

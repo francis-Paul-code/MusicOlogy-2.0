@@ -50,6 +50,10 @@
 .copyright{
   position: relative;
   text-align: left;
+  cursor: pointer;
+}
+:hover.copyright{
+   text-decoration: underline;
 }
 .ul > div.active{
   background:#B93F2F;
@@ -59,7 +63,11 @@
   background:#B93F2F;;
 
 }
-
+.LinkText > span{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:1.1em;
+  font-weight:600;
+}
 
 @media (max-width: 960px) {
   .Links {

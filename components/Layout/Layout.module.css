@@ -15,7 +15,7 @@
     padding:0.5vh;
     width:100%;
     background:#060F1E;
-    float:top;
+    overflow:hidden;
     z-index:20000;
 }
 .menuIcon{
@@ -26,13 +26,14 @@
     box-sizing: border-box;
     float:right;
     height:88vh;
-    right:2%;
+    right:2vw;
     top:2vh;
-    width:72%;
+    width:96vw;
     border-radius:2.5vh;
     background:#06142B;
     overflow:hidden;
 }
+
 .drawerPaper{
     position:relative;
     box-sizing: border-box;
@@ -40,20 +41,39 @@
     height:92vh;
     width:350px;
 }
-.sideBar{
+.drawerPaper2{
     position:relative;
     box-sizing: border-box;
     float:left;
     height:92vh;
+    width:23vw;
+    border-right: none;
+    overflow: hidden;
+}
+.sideBar{
+    position:relative;
+    box-sizing: border-box;
+    float:left;
+    height:92%;
     width:22%;
     border-right: none;
     white-space: nowrap;
 }
 .logo{
     position: relative;
-    width:3.3%;
+    width:20%;
     margin:0 0.3%;
 }
+.holder{
+    position:relative;
+    width:100%;
+    top:8vh;
+    height:92vh;
+}
+.MuiDrawer-paperAnchorDockedLeft{
+    border-right:none !important;
+  }
+
 
 @media (max-width: 960px) {
     .main{
@@ -68,7 +88,7 @@
         left:0;
     }
     .logo{
-        width:7%;
+        width:35%;
         margin: 0 5px;
     }
 }
@@ -78,7 +98,13 @@
         width:250px;
     }
     .logo{
-        width:10%;
+        width:45%;
         margin: 0 5px;
     }
+}
+.close{
+    color: #fff;
+}
+:hover.close {
+    color:#B93F2F;
 }

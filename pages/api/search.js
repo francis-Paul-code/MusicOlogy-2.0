@@ -22,7 +22,6 @@ export async function searchResults() {
         for (let value of Object.values(results)) {
           if (data.includes(value) === false) data.push(value);
         }
-        console.log(data);
       });
   } catch (error) {
     console.error(error);
@@ -47,7 +46,6 @@ export async function playlists() {
         for (let value of Object.values(results)) {
           if (data2.includes(value) === false) data2.push(value);
         }
-        console.log(data);
       });
   } catch (error) {
     console.error(error);
