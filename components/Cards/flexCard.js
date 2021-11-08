@@ -1,8 +1,8 @@
 import classes from './flexCard.module.css';
 
-const FlexCard = (props) => {
+const FlexCard = (props, {styles}) => {
     return (
-        <div className={classes.main}>
+        <div className={classes.main} style={{...styles}}>
             <div className={classes.cover}>
                 <img src={props.image} alt=""/>
             </div>

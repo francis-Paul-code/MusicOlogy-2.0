@@ -2,10 +2,10 @@ import classes from "./ArtistCard.module.css";
 import Link from "next/link";
 import Hidden from "@material-ui/core/Hidden";
 
-const ArtistCard = (props) => {
+const ArtistCard = (props, {styles}) => {
   return (
     <Link href={"/"}>
-      <div className={classes.main}>
+      <div className={classes.main} style={{...styles}}>
         
         <Hidden xsDown>
           <section className={classes._Desktop}>

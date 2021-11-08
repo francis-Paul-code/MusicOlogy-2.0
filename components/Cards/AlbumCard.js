@@ -2,9 +2,9 @@ import classes from "./AlbumCard.module.css";
 import Hidden from "@material-ui/core/Hidden";
 import { Divider, Grid } from "@material-ui/core";
 
-const AlbumCard = (props) => {
+const AlbumCard = (props, {styles}) => {
   return (
-    <div className={classes.main}>
+    <div className={classes.main} style={{...styles}}>
       <Hidden smDown>
         <section className={classes._Desktop}>
           <img src={props.image} alt="" />
