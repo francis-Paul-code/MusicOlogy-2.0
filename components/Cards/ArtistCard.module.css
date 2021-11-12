@@ -71,7 +71,7 @@
   }
   @media (max-width: 350px) {
     .main {
-      height: 37vh;
+      height: 21vmax;
       width: 80%;
       margin: 5% 0 0 7%;
     }

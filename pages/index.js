@@ -6,22 +6,9 @@ import Carrier from "../components/ui/mainCarrier";
 const Landing = () => {
   return (
     <Fragment>
-      {/* <Head>
-        <title>MusicOlogy</title>
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
-        <meta
-          name="description"
-          content="This Is the First Nextjs Version"
-        ></meta>
-      </Head> */}
-      <section>
-        <TopBar />
+      <section style={{position:"absolute", height:"100vh", width:"100vw"}}>
         <Carrier>
-          <h1>Home</h1>
+          <h1>Landing</h1>
         </Carrier>
       </section>
     </Fragment>

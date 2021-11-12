@@ -56,3 +56,14 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-seri,;
 }
+
+
+@media (max-width: 460px) {
+    .main {
+      position: relative;
+      width: 45%;
+      height: 33vh;
+      margin: 5% 0 0 5%;
+    }
+
+}

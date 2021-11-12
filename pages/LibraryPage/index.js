@@ -6,7 +6,7 @@ const AlbumsPage = () => {
         <div>
             <TopBar/>
             <Carrier>
-                <h1>Albums</h1>
+                <h1>Library</h1>
             </Carrier>
         </div>
     )

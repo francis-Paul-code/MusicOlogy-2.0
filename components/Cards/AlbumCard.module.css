@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  height: 21em;
+  height: 25vmax;
   width: 23%;
   margin: 2% 0 0 2%;
 }
@@ -148,7 +148,7 @@
   .main {
     position: relative;
     width: 45%;
-    height: 35vh;
+    height: 33vh;
     margin: 5% 0 0 5%;
   }
   .overlay {

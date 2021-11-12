@@ -1,45 +1,67 @@
 import AlbumsList from "./AlbumsList";
-import {data} from '../../pages/api/search';
+import { value } from "../ui/TopBar";
+import { useEffect, useState } from "react";
+import LoadingPage from "../Layout/LoadingPage";
 
-const dataHolder = [];
-
+let data = [];
 const AlbumsResults = (props) => {
+  const [loading, setLoading] = useState(false);
 
-    function handler() {
-        for (let i = 0; i < data.length; i++) {
-          const values = data[i].album.type;
-          if (values === "album") {
-            let album = {
-              id: data[i].album.id,
-              title: data[i].album.title,
-              picture: data[i].album.cover_big,
-              name: data[i].artist.name,
-              
-            };
-            dataHolder.push(album);
+  useEffect(() => {
+    const handler = () => {
+      try {
+        setLoading(true);
+        fetch(
+          `https://vast-beyond-47209.herokuapp.com/https://api.deezer.com/search/album?q=${value}`,
+          {
+            headers: {
+              "X-Requested-With": "XMLHttpRequest",
+            },
           }
-        }
+        )
+          .then((response) => {
+            return response.json();
+          })
+          .then((resData) => {
+            const results = resData.data;
+            let all = [];
+            results.map((item) => {
+              let album = {
+                id: item.id,
+                title: item.title,
+                picture: item.cover_big,
+                name: item.artist.name,
+              };
+              all.push(album);
+            });
+            const next = [
+              ...all
+                .reduce((map, obj) => map.set(obj.id, obj), new Map())
+                .values(),
+            ];
+            data = next;
+            setLoading(false);
+          });
+      } catch (error) {
+        console.log(error);
       }
-      handler();
-      const U_albums = [
-        ...dataHolder
-          .reduce((map, obj) => map.set(obj.id, obj), new Map())
-          .values(),
-      ];
+    };handler();
+  }, []);
+  
 
-    return (
-        <div
+
+  return (
+    <div
       style={{
         position: "relative",
         width: "100%",
         height: "auto",
-        padding: "0 3%"
-
+        padding: "0 3%",
       }}
     >
-      <AlbumsList item={U_albums} />
+      {loading ? <LoadingPage /> : <AlbumsList item={data} />}
     </div>
-    )
-}
+  );
+};
 
-export default AlbumsResults
+export default AlbumsResults;

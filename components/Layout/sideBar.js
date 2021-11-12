@@ -38,20 +38,7 @@ import {
 } from "@material-ui/icons";
 import theme from "./theme";
 
-// function Copyright() {
-//   return (
-//     <h3
-//       variant="body2"
-//       align="center"
-//       style={{ fontWeight: "bold" }}
-//       className={classes.copyright}
-//     >
-//       <Link color="inherit" href="https://music-ology-2-0.vercel.app/">
-//         &copy;Musicology {new Date().getFullYear()}| All Rights Reserved
-//       </Link>
-//     </h3>
-//   );
-// }
+
 
 const SideBar = () => {
   return (
@@ -62,7 +49,7 @@ const SideBar = () => {
             <List>
               {[
                 { name:"Home", route:"/home"},
-                { name:"Library", route:"/Albums"},
+                { name:"Library", route:"/LibraryPage"},
                 { name:"Playing Queue", route:"/"},
               ].map((item, index) => ( 
                 <Link href={item.route} key={item.name}>
@@ -120,25 +107,3 @@ const SideBar = () => {
 };
 
 export default SideBar;
-
-// <Button Route="/home" _Name="Home" startIcon={<HomeIcon />} />
-// <Button
-//   Route="/Albums"
-//   _Name="Library"
-//   startIcon={<GenresIcon />}
-// />
-// <Button
-//   Route="/"
-//   _Name="Playing Queue"
-//   startIcon={<PlayingQueue />}
-// />
-// </ul>
-
-// <ul className={classes.Footer}>
-// <Button
-//   Route="/"
-//   _Name="Subscription"
-//   startIcon={<SubscribeIcon />}
-// />
-// <Button Route="/" _Name="Settings" startIcon={<SettingsIcon />} />
-// <Button Route="/" _Name="Help" startIcon={<HelpIcon />} />

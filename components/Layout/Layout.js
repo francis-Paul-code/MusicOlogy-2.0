@@ -16,10 +16,6 @@ import { color } from "@material-ui/system";
 import { render } from "react-dom";
 import classNames from "classnames";
 
-
-
-
-
 const Layout = (props) => {
   const [open, setOpen] = useState(false);
   function handleDrawerToggle() {
@@ -34,33 +30,35 @@ const Layout = (props) => {
     setOpen1(false);
   }
 
-
-    let mainShift = {transition: 'transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms'}
-    let CloseSideBar;
-    let OpenSideBar;
-    if (open1 === true) {
-      mainShift = {width:"73vw", right:"2vw"  }
-      CloseSideBar = <IconButton
+  let mainShift = {
+    transition: "transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms",
+  };
+  let CloseSideBar;
+  let OpenSideBar;
+  if (open1 === true) {
+    mainShift = { width: "73vw", right: "2vw" };
+    CloseSideBar = (
+      <IconButton
         edge="start"
         aria-label="menu"
         onClick={handleDrawerClose}
         sx={{ mr: 2 }}
       >
-        <Close  className={classes.close} />
-      </IconButton>; ;
-    }else{
-      CloseSideBar =  <IconButton
-      edge="start"
-      aria-label="menu"
-      onClick={handleDrawerOpen}
-      sx={{ mr: 2 }}
-    >
-      <MenuIcon className={classes.close} />
-    </IconButton>
-    }
-
-    
-
+        <Close className={classes.close} />
+      </IconButton>
+    );
+  } else {
+    CloseSideBar = (
+      <IconButton
+        edge="start"
+        aria-label="menu"
+        onClick={handleDrawerOpen}
+        sx={{ mr: 2 }}
+      >
+        <MenuIcon className={classes.close} />
+      </IconButton>
+    );
+  }
 
   return (
     <section className={classes.Layout}>
@@ -93,10 +91,9 @@ const Layout = (props) => {
             </Hidden>
 
             <Hidden smDown>
-             {OpenSideBar}
+              {OpenSideBar}
               {CloseSideBar}
             </Hidden>
-
 
             <Link href="https://music-ology-2-0.vercel.app/">
               <div
@@ -109,19 +106,29 @@ const Layout = (props) => {
                 }}
               >
                 <img src="/logo.svg" alt="logo" className={classes.logo} />
-                <Typography
+                <div
                   style={{
                     position: "relative",
-                    color: "#fff",
-                    fontWeight: "bold",
-                    fontFamily: theme.typography.fontFamily,
-                    fontSize: theme.typography.fontSize * 1.5,
-                    padding: "3% 0",
+                    display:"flex",
+                    height: "100%",
+                    width: "60%",
                   }}
                 >
-                  MusicOlogy
-                </Typography>
-                <div className={classes.grow} />
+                  {" "}
+                  <span
+                    style={{
+                      margin:'auto 0',
+                      color:"#fff",
+                      fontWeight: "bold",
+                      textAlign:"center",
+                      fontFamily: theme.typography.fontFamily,
+                      fontSize: theme.typography.fontSize * 1.5,
+              
+                    }}
+                  >
+                    MusicOlogy{" "}
+                  </span>
+                </div>
               </div>
             </Link>
           </Toolbar>
@@ -151,21 +158,27 @@ const Layout = (props) => {
               paper: classes.drawerPaper2,
             }}
             sx={{
-              "& .MuiDrawer-paperAnchorDockedLeft" :{
-                borderRight:"none !important"
-              }
+              "& .MuiDrawer-paperAnchorDockedLeft": {
+                borderRight: "none !important",
+              },
             }}
             open={open1}
           >
             <div className={classes.holder}>
               <SideBar />
             </div>
-            
           </Drawer>
         </Grid>
       </Hidden>
 
-      <Grid className={classes.main} style={mainShift}>{props.children}</Grid>
+      <Hidden smDown>
+        <Grid className={classes.main} style={mainShift}>
+          {props.children}
+        </Grid>
+      </Hidden>
+      <Hidden mdUp>
+        <Grid className={classes.main}>{props.children}</Grid>
+      </Hidden>
     </section>
   );
 };
