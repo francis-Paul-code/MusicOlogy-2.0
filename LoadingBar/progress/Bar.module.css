@@ -1,0 +1,10 @@
+.main{
+    position: fixed;
+    background: #B93F2F;
+    left: 0;
+    top: 0;
+    height: 0.15rem;
+    width: 100vw;
+    z-index: 50000;
+
+}

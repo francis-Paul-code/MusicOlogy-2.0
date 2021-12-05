@@ -8,8 +8,7 @@
 .container {
   position: relative;
   align-content: end;
-  width: 98%;
-  left:1%;
+  width: 100%;
   height: 100%;
 }
 .main form {
@@ -18,13 +17,13 @@
   height: 55%;
   float: right;
   top: 26%;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .searchBar {
   position: relative;
   width: 94%;
-  left:3%;
+  left: 3%;
   height: 100%;
   justify-content: space-evenly;
   display: flex;
@@ -34,7 +33,7 @@
 .searchBar div {
   position: relative;
   box-sizing: border-box;
-  padding:0 1%;
+  padding: 0 1%;
   width: 6%;
 }
 .searchBar svg {
@@ -67,7 +66,7 @@
 }
 .Button svg {
   position: relative;
-  top:1px;
+  top: 1px;
 }
 .Button svg:hover {
   fill: rgb(185, 63, 47);

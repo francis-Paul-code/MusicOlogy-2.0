@@ -1,0 +1,31 @@
+.main {
+  position: relative;
+  width: 96%;
+  height: 98%;
+  overflow-y: scroll;
+  background: transparent;
+  justify-content: space-around;
+  top: 1%;
+  left: 2%;
+}
+.label {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-seri;
+  margin: 0;
+  padding: 0;
+}
+.carrier {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+}

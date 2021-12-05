@@ -1,8 +1,8 @@
 .main {
   position: relative;
-  height: 22em;
-  width: 23%;
-  margin: 2% 0 0 2%;
+  height: 23vmax;
+  width: 20vw;
+  margin: 2% 0 0 1%;
   cursor: pointer;
 }
 
@@ -55,27 +55,27 @@
 }
 
 @media (max-width: 600px) {
-    .main {
-      height: 25vh;
-      width: 30%;
-      margin: 3% 0 0 3%;
-    }
+  .main {
+    height: 25vh;
+    width: 30%;
+    margin: 3% 0 0 3%;
   }
+}
 
-  @media (max-width: 450px) {
-    .main {
-      height: 30vh;
-      width: 46%;
-      margin: 3% 0 0 3%;
-    }
+@media (max-width: 450px) {
+  .main {
+    height: 30vh;
+    width: 46%;
+    margin: 3% 0 0 3%;
   }
-  @media (max-width: 350px) {
-    .main {
-      height: 21vmax;
-      width: 80%;
-      margin: 5% 0 0 7%;
-    }
+}
+@media (max-width: 350px) {
+  .main {
+    height: 21vmax;
+    width: 80%;
+    margin: 5% 0 0 7%;
   }
+}
 ._Mobile {
   position: relative;
   height: 100%;

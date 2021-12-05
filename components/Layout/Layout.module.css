@@ -1,110 +1,108 @@
-.Layout{
-    width:100%;
-    min-height:100vh;
-    margin:0;
-    padding:0;
-    color:white;
-    overflow:hidden;
-    background:#060F1E;
-    justify-content: space-evenly;
+.Layout {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow: hidden;
+  background: #060f1e;
+  justify-content: space-evenly;
+}
+.topBar {
+  position: relative;
+  height: 8vh;
+  padding: 0.5vh;
+  width: 100%;
+  background: #060f1e;
+  overflow: hidden;
+  z-index: 20000;
+}
+.menuIcon {
+  color: #fff;
+}
+.main {
+  position: relative;
+  box-sizing: border-box;
+  float: right;
+  height: 88vh;
+  right: 2vw;
+  top: 2vh;
+  width: 96vw;
+  border-radius: 2.5vh;
+  background: #06142b;
+  overflow: hidden;
+}
 
+.drawerPaper {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  height: 92vh;
+  width: 350px;
 }
-.topBar{
-    position:relative;
-    height:8vh;
-    padding:0.5vh;
-    width:100%;
-    background:#060F1E;
-    overflow:hidden;
-    z-index:20000;
+.drawerPaper2 {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  height: 92vh;
+  width: 23vw;
+  border-right: none;
+  overflow: hidden;
 }
-.menuIcon{
-    color:#fff;
+.sideBar {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  height: 92%;
+  width: 22%;
+  border-right: none;
+  white-space: nowrap;
 }
-.main{
-    position:relative;
-    box-sizing: border-box;
-    float:right;
-    height:88vh;
-    right:2vw;
-    top:2vh;
-    width:96vw;
-    border-radius:2.5vh;
-    background:#06142B;
-    overflow:hidden;
+.logo {
+  position: relative;
+  width: 20%;
+  margin: 0 0.3%;
 }
-
-.drawerPaper{
-    position:relative;
-    box-sizing: border-box;
-    float:left;
-    height:92vh;
-    width:350px;
+.holder {
+  position: relative;
+  width: 100%;
+  top: 8vh;
+  height: 92vh;
 }
-.drawerPaper2{
-    position:relative;
-    box-sizing: border-box;
-    float:left;
-    height:92vh;
-    width:23vw;
-    border-right: none;
-    overflow: hidden;
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: none !important;
 }
-.sideBar{
-    position:relative;
-    box-sizing: border-box;
-    float:left;
-    height:92%;
-    width:22%;
-    border-right: none;
-    white-space: nowrap;
-}
-.logo{
-    position: relative;
-    width:20%;
-    margin:0 0.3%;
-}
-.holder{
-    position:relative;
-    width:100%;
-    top:8vh;
-    height:92vh;
-}
-.MuiDrawer-paperAnchorDockedLeft{
-    border-right:none !important;
-  }
-
 
 @media (max-width: 960px) {
-    .main{
-        position:relative;
-        width:94%;
-        right:3%;
-        height:90vh;
-    }
-    .sideBar{
-        position:relative;
-        height:92%;
-        left:0;
-    }
-    .logo{
-        width:35%;
-        margin: 0 5px;
-    }
+  .main {
+    position: relative;
+    width: 94%;
+    right: 3%;
+    height: 90vh;
+  }
+  .sideBar {
+    position: relative;
+    height: 92%;
+    left: 0;
+  }
+  .logo {
+    width: 35%;
+    margin: 0 5px;
+  }
 }
 
-@media (max-width: 450px){
-    .drawerPaper{  
-        width:250px;
-    }
-    .logo{
-        width:45%;
-        margin: 0 5px;
-    }
+@media (max-width: 450px) {
+  .drawerPaper {
+    width: 250px;
+  }
+  .logo {
+    width: 45%;
+    margin: 0 5px;
+  }
 }
-.close{
-    color: #fff;
+.close {
+  color: #fff;
 }
 :hover.close {
-    color:#B93F2F;
+  color: #b93f2f;
 }

@@ -1,8 +1,8 @@
 .main {
   position: relative;
-  height: 25vmax;
-  width: 23%;
-  margin: 2% 0 0 2%;
+  height: 24vmax;
+  width: 20vw;
+  margin: 2% 0 0 1%;
 }
 
 ._Desktop {
@@ -51,9 +51,8 @@
 .albumName {
   position: relative;
   height: 58%;
-  margin:1% 5%;
+  margin: 1% 5%;
   vertical-align: text-bottom;
-
 }
 .albumName h3 {
   position: relative;
@@ -69,7 +68,7 @@
 .artistName {
   position: relative;
   height: 38%;
-  margin:1% 5%;
+  margin: 1% 5%;
 }
 .artistName h2 {
   position: relative;
@@ -108,7 +107,6 @@
   border-radius: 2%;
 }
 
-
 @media (max-width: 700px) {
   .main {
     position: relative;
@@ -119,11 +117,11 @@
   .overlay {
     border-radius: 2%;
   }
-  .artistName h2{
-    font-size:0.8em;
+  .artistName h2 {
+    font-size: 0.8em;
   }
-  .albumName h3{
-    font-size:0.8em;
+  .albumName h3 {
+    font-size: 0.8em;
   }
 }
 @media (max-width: 550px) {
@@ -136,11 +134,11 @@
   .overlay {
     border-radius: 2%;
   }
-  .artistName h2{
-    font-size:0.7em;
+  .artistName h2 {
+    font-size: 0.7em;
   }
-  .albumName h3{
-    font-size:0.6em;
+  .albumName h3 {
+    font-size: 0.6em;
   }
 }
 
@@ -154,10 +152,10 @@
   .overlay {
     border-radius: 2%;
   }
-  .artistName h2{
-    font-size:1em;
+  .artistName h2 {
+    font-size: 1em;
   }
-  .albumName h3{
-    font-size:0.9em;
+  .albumName h3 {
+    font-size: 0.9em;
   }
 }
