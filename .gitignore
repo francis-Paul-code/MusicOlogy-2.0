@@ -34,4 +34,4 @@ yarn-error.log*
 .vercel
 
 # old sidebar
-/components/layout
+./components/layout
